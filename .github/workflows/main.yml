@@ -19,7 +19,7 @@ jobs:
         run: |
           git config --global user.email ${{ secrets.USER_EMAIL }}
           git config --global user.name ${{ secrets.USER_NAME }}
-          echo "w" >> README.md
+          echo "\rHello World" >> README.md
           git add README.md
-          git commit -m "\rHello World"
+          git commit -m "Hello World"
           git push origin main
